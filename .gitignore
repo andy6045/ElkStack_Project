@@ -1,0 +1,18 @@
+# Elasticsearch data
+elasticsearch-data/
+
+# Logstash sincedb
+*.sincedb
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment overrides (keep .env as example)
+.env.local
