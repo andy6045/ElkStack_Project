@@ -1,0 +1,288 @@
+{
+  "name": "ProjectManagement",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "tables": [
+      {
+        "name": "ProjectData",
+        "lineageTag": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "columns": [
+          {
+            "name": "Project Name",
+            "dataType": "string",
+            "lineageTag": "col-001",
+            "sourceColumn": "Project Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Task Name",
+            "dataType": "string",
+            "lineageTag": "col-002",
+            "sourceColumn": "Task Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Assigned To",
+            "dataType": "string",
+            "lineageTag": "col-003",
+            "sourceColumn": "Assigned To",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Start Date",
+            "dataType": "dateTime",
+            "lineageTag": "col-004",
+            "sourceColumn": "Start Date",
+            "formatString": "yyyy-MM-dd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Days Required",
+            "dataType": "int64",
+            "lineageTag": "col-005",
+            "sourceColumn": "Days Required",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "End Date",
+            "dataType": "dateTime",
+            "lineageTag": "col-006",
+            "sourceColumn": "End Date",
+            "formatString": "yyyy-MM-dd",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Progress",
+            "dataType": "double",
+            "lineageTag": "col-007",
+            "sourceColumn": "Progress",
+            "formatString": "0.00%",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "Progress %",
+            "dataType": "double",
+            "lineageTag": "col-008",
+            "sourceColumn": "Progress %",
+            "formatString": "0.0",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "lineageTag": "col-009",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Duration (Days)",
+            "dataType": "int64",
+            "lineageTag": "col-010",
+            "sourceColumn": "Duration (Days)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Schedule Variance",
+            "dataType": "double",
+            "lineageTag": "col-011",
+            "sourceColumn": "Schedule Variance",
+            "formatString": "0.0%",
+            "summarizeBy": "average"
+          },
+          {
+            "name": "On Track",
+            "dataType": "string",
+            "lineageTag": "col-012",
+            "sourceColumn": "On Track",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month Started",
+            "dataType": "string",
+            "lineageTag": "col-013",
+            "sourceColumn": "Month Started",
+            "summarizeBy": "none"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Tasks",
+            "lineageTag": "msr-001",
+            "expression": "COUNTROWS(ProjectData)",
+            "formatString": "#,##0",
+            "displayFolder": "P1 - Critical KPIs"
+          },
+          {
+            "name": "Completion Rate",
+            "lineageTag": "msr-002",
+            "expression": "DIVIDE(CALCULATE(COUNTROWS(ProjectData), ProjectData[Status] = \"Completed\"), COUNTROWS(ProjectData))",
+            "formatString": "0.0%",
+            "displayFolder": "P1 - Critical KPIs"
+          },
+          {
+            "name": "Average Progress",
+            "lineageTag": "msr-003",
+            "expression": "AVERAGE(ProjectData[Progress])",
+            "formatString": "0.0%",
+            "displayFolder": "P1 - Critical KPIs"
+          },
+          {
+            "name": "Tasks Completed",
+            "lineageTag": "msr-004",
+            "expression": "CALCULATE(COUNTROWS(ProjectData), ProjectData[Status] = \"Completed\")",
+            "formatString": "#,##0",
+            "displayFolder": "P2 - Status KPIs"
+          },
+          {
+            "name": "Tasks In Progress",
+            "lineageTag": "msr-005",
+            "expression": "CALCULATE(COUNTROWS(ProjectData), ProjectData[Status] = \"In Progress\")",
+            "formatString": "#,##0",
+            "displayFolder": "P2 - Status KPIs"
+          },
+          {
+            "name": "Tasks Not Started",
+            "lineageTag": "msr-006",
+            "expression": "CALCULATE(COUNTROWS(ProjectData), ProjectData[Status] = \"Not Started\")",
+            "formatString": "#,##0",
+            "displayFolder": "P2 - Status KPIs"
+          },
+          {
+            "name": "Tasks Behind Schedule",
+            "lineageTag": "msr-007",
+            "expression": "CALCULATE(COUNTROWS(ProjectData), ProjectData[On Track] = \"Behind Schedule\")",
+            "formatString": "#,##0",
+            "displayFolder": "P2 - Status KPIs"
+          },
+          {
+            "name": "Tasks At Risk",
+            "lineageTag": "msr-008",
+            "expression": "CALCULATE(COUNTROWS(ProjectData), ProjectData[On Track] = \"At Risk\")",
+            "formatString": "#,##0",
+            "displayFolder": "P2 - Status KPIs"
+          },
+          {
+            "name": "Tasks On Track",
+            "lineageTag": "msr-009",
+            "expression": "CALCULATE(COUNTROWS(ProjectData), ProjectData[On Track] = \"On Track\")",
+            "formatString": "#,##0",
+            "displayFolder": "P2 - Status KPIs"
+          },
+          {
+            "name": "Total Projects",
+            "lineageTag": "msr-010",
+            "expression": "DISTINCTCOUNT(ProjectData[Project Name])",
+            "formatString": "#,##0",
+            "displayFolder": "P3 - Resource KPIs"
+          },
+          {
+            "name": "Total Team Members",
+            "lineageTag": "msr-011",
+            "expression": "DISTINCTCOUNT(ProjectData[Assigned To])",
+            "formatString": "#,##0",
+            "displayFolder": "P3 - Resource KPIs"
+          },
+          {
+            "name": "Total Effort (Days)",
+            "lineageTag": "msr-012",
+            "expression": "SUM(ProjectData[Days Required])",
+            "formatString": "#,##0",
+            "displayFolder": "P3 - Resource KPIs"
+          },
+          {
+            "name": "Avg Days Per Task",
+            "lineageTag": "msr-013",
+            "expression": "AVERAGE(ProjectData[Days Required])",
+            "formatString": "0.0",
+            "displayFolder": "P4 - Duration KPIs"
+          },
+          {
+            "name": "Max Task Duration",
+            "lineageTag": "msr-014",
+            "expression": "MAX(ProjectData[Days Required])",
+            "formatString": "#,##0",
+            "displayFolder": "P4 - Duration KPIs"
+          },
+          {
+            "name": "Min Task Duration",
+            "lineageTag": "msr-015",
+            "expression": "MIN(ProjectData[Days Required])",
+            "formatString": "#,##0",
+            "displayFolder": "P4 - Duration KPIs"
+          },
+          {
+            "name": "Completion Rate Color",
+            "lineageTag": "msr-016",
+            "expression": "IF([Completion Rate] >= 0.7, \"#27AE60\", IF([Completion Rate] >= 0.4, \"#F39C12\", \"#E74C3C\"))",
+            "displayFolder": "Conditional Formatting"
+          },
+          {
+            "name": "Progress Bar",
+            "lineageTag": "msr-017",
+            "expression": "REPT(\"|\", ROUND([Average Progress] * 20, 0)) & REPT(\".\", 20 - ROUND([Average Progress] * 20, 0))",
+            "displayFolder": "Visual Helpers"
+          },
+          {
+            "name": "Avg Schedule Variance",
+            "lineageTag": "msr-018",
+            "expression": "AVERAGE(ProjectData[Schedule Variance])",
+            "formatString": "0.0%",
+            "displayFolder": "P2 - Status KPIs"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ProjectData-partition",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"Project_Management_Data_Enhanced.xlsx\"), null, true),",
+                "    ProjectData_Sheet = Source{[Item=\"Project Data\",Kind=\"Sheet\"]}[Data],",
+                "    PromotedHeaders = Table.PromoteHeaders(ProjectData_Sheet, [PromoteAllScalars=true]),",
+                "    ChangedTypes = Table.TransformColumnTypes(PromotedHeaders, {",
+                "        {\"Project Name\", type text},",
+                "        {\"Task Name\", type text},",
+                "        {\"Assigned To\", type text},",
+                "        {\"Start Date\", type datetime},",
+                "        {\"Days Required\", Int64.Type},",
+                "        {\"End Date\", type datetime},",
+                "        {\"Progress\", type number},",
+                "        {\"Progress %\", type number},",
+                "        {\"Status\", type text},",
+                "        {\"Duration (Days)\", Int64.Type},",
+                "        {\"Schedule Variance\", type number},",
+                "        {\"On Track\", type text},",
+                "        {\"Month Started\", type text}",
+                "    })",
+                "in",
+                "    ChangedTypes"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"ProjectData\"]"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.138.0.0 (24.10)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ]
+  }
+}

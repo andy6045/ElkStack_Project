@@ -1,0 +1,153 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/1.0.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY24SU06",
+      "reportVersionAtImport": "5.53",
+      "type": 2
+    }
+  },
+  "pages": [
+    {
+      "name": "ExecutiveOverview",
+      "displayName": "Executive Overview",
+      "displayOption": "FitToPage",
+      "height": 720,
+      "width": 1280,
+      "visualContainers": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 100,
+          "width": 1280,
+          "height": 60,
+          "config": "{\"name\": \"15e1c5e5-e24c-4746-8b7f-a48586772206\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"z\": 100, \"width\": 1280, \"height\": 60}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"PROJECT MANAGEMENT DASHBOARD\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"18px\", \"color\": \"#FFFFFF\"}}]}], \"background\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F4E79'\"}}}}}}}]}}}"
+        },
+        {
+          "x": 20,
+          "y": 75,
+          "z": 1,
+          "width": 195,
+          "height": 120,
+          "config": "{\"name\": \"3c0962a2-aafe-429c-a35f-cb0e596b03e4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 75, \"z\": 1, \"width\": 195, \"height\": 120}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"ProjectData.Total Tasks\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Tasks\"}, \"Name\": \"ProjectData.Total Tasks\"}]}, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3498DB'\"}}}}}, \"fontSize\": \"28px\"}}], \"categoryLabels\": [{\"properties\": {\"show\": true, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#BDC3C7'\"}}}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Tasks'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"11px\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}, \"transparency\": 0}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 230,
+          "y": 75,
+          "z": 2,
+          "width": 195,
+          "height": 120,
+          "config": "{\"name\": \"6adc0e5b-6b41-4017-8080-b81dc56aed11\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 230, \"y\": 75, \"z\": 2, \"width\": 195, \"height\": 120}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"ProjectData.Completion Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Completion Rate\"}, \"Name\": \"ProjectData.Completion Rate\"}]}, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#E74C3C'\"}}}}}, \"fontSize\": \"28px\"}}], \"categoryLabels\": [{\"properties\": {\"show\": true}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Completion Rate'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 440,
+          "y": 75,
+          "z": 3,
+          "width": 195,
+          "height": 120,
+          "config": "{\"name\": \"a95c6bc9-8d80-41ea-ae91-e7d48bf17541\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 440, \"y\": 75, \"z\": 3, \"width\": 195, \"height\": 120}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"ProjectData.Average Progress\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Average Progress\"}, \"Name\": \"ProjectData.Average Progress\"}]}, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#F39C12'\"}}}}}, \"fontSize\": \"28px\"}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Avg Progress'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 650,
+          "y": 75,
+          "z": 4,
+          "width": 195,
+          "height": 120,
+          "config": "{\"name\": \"6dd15d09-92ec-4136-955b-284c2289d7d6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 650, \"y\": 75, \"z\": 4, \"width\": 195, \"height\": 120}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"ProjectData.Tasks Not Started\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Tasks Not Started\"}, \"Name\": \"ProjectData.Tasks Not Started\"}]}, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#E74C3C'\"}}}}}, \"fontSize\": \"28px\"}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Not Started'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 860,
+          "y": 75,
+          "z": 5,
+          "width": 195,
+          "height": 120,
+          "config": "{\"name\": \"8abf28fa-3358-4b8a-9092-3924e9572b0c\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 860, \"y\": 75, \"z\": 5, \"width\": 195, \"height\": 120}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"ProjectData.Total Projects\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Projects\"}, \"Name\": \"ProjectData.Total Projects\"}]}, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#9B59B6'\"}}}}}, \"fontSize\": \"28px\"}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Projects'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 1065,
+          "y": 75,
+          "z": 6,
+          "width": 195,
+          "height": 120,
+          "config": "{\"name\": \"4a46ccfd-8a93-4f51-b35b-eaea1e94acaf\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1065, \"y\": 75, \"z\": 6, \"width\": 195, \"height\": 120}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"ProjectData.Total Team Members\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Team Members\"}, \"Name\": \"ProjectData.Total Team Members\"}]}, \"objects\": {\"labels\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1ABC9C'\"}}}}}, \"fontSize\": \"28px\"}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Team Members'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 20,
+          "y": 210,
+          "z": 10,
+          "width": 400,
+          "height": 320,
+          "config": "{\"name\": \"5bae180a-82e2-486f-9b8e-b04f1b180f8e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 210, \"z\": 10, \"width\": 400, \"height\": 320}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"ProjectData.Status\"}], \"Y\": [{\"queryRef\": \"ProjectData.Total Tasks\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Status\"}, \"Name\": \"ProjectData.Status\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Tasks\"}, \"Name\": \"ProjectData.Total Tasks\"}]}, \"objects\": {\"legend\": [{\"properties\": {\"show\": true, \"position\": \"Bottom\", \"labelColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#BDC3C7'\"}}}}}}}], \"dataPoint\": [{\"properties\": {}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Task Status Distribution'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"13px\", \"fontFamily\": \"Segoe UI Semibold\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 440,
+          "y": 210,
+          "z": 11,
+          "width": 820,
+          "height": 320,
+          "config": "{\"name\": \"4d84313b-8f7e-426a-b074-716746105d60\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 440, \"y\": 210, \"z\": 11, \"width\": 820, \"height\": 320}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"ProjectData.Project Name\"}], \"Y\": [{\"queryRef\": \"ProjectData.Average Progress\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Project Name\"}, \"Name\": \"ProjectData.Project Name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Average Progress\"}, \"Name\": \"ProjectData.Average Progress\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Average Progress\"}}}]}, \"objects\": {\"categoryAxis\": [{\"properties\": {\"labelColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#BDC3C7'\"}}}}}}}], \"valueAxis\": [{\"properties\": {\"labelColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#BDC3C7'\"}}}}}}}], \"dataPoint\": [{\"properties\": {\"fill\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#3498DB'\"}}}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Average Progress by Project'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"13px\", \"fontFamily\": \"Segoe UI Semibold\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 20,
+          "y": 545,
+          "z": 12,
+          "width": 1240,
+          "height": 175,
+          "config": "{\"name\": \"c65d83af-e384-4844-9ee7-fa7357b430e0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 545, \"z\": 12, \"width\": 1240, \"height\": 175}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"ProjectData.Project Name\"}, {\"queryRef\": \"ProjectData.Task Name\"}, {\"queryRef\": \"ProjectData.Assigned To\"}, {\"queryRef\": \"ProjectData.Progress\"}, {\"queryRef\": \"ProjectData.Status\"}, {\"queryRef\": \"ProjectData.Days Required\"}, {\"queryRef\": \"ProjectData.On Track\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Project Name\"}, \"Name\": \"ProjectData.Project Name\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Task Name\"}, \"Name\": \"ProjectData.Task Name\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Assigned To\"}, \"Name\": \"ProjectData.Assigned To\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Progress\"}, \"Name\": \"ProjectData.Progress\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Status\"}, \"Name\": \"ProjectData.Status\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Days Required\"}, \"Name\": \"ProjectData.Days Required\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"On Track\"}, \"Name\": \"ProjectData.On Track\"}]}, \"objects\": {\"grid\": [{\"properties\": {\"gridVertical\": true, \"gridHorizontal\": true}}], \"columnHeaders\": [{\"properties\": {\"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"backColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F4E79'\"}}}}}}}], \"values\": [{\"properties\": {\"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#ECF0F1'\"}}}}}, \"backColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Task Details'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"13px\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        }
+      ],
+      "config": "{\"name\": \"ExecutiveOverview\", \"objects\": {\"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1B2838'\"}}}}}, \"transparency\": 0}}], \"outspace\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0D1B2A'\"}}}}}}}]}}"
+    },
+    {
+      "name": "ProjectDeepDive",
+      "displayName": "Project Deep Dive",
+      "displayOption": "FitToPage",
+      "height": 720,
+      "width": 1280,
+      "visualContainers": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 100,
+          "width": 1280,
+          "height": 60,
+          "config": "{\"name\": \"91a696e1-75db-45df-9151-53863f777cd8\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"z\": 100, \"width\": 1280, \"height\": 60}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"PROJECT DEEP DIVE & TEAM ANALYSIS\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"18px\", \"color\": \"#FFFFFF\"}}]}], \"background\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1F4E79'\"}}}}}}}]}}}"
+        },
+        {
+          "x": 20,
+          "y": 75,
+          "z": 1,
+          "width": 620,
+          "height": 330,
+          "config": "{\"name\": \"b798650c-d3d3-4e96-a66c-d47ac06aba61\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 75, \"z\": 1, \"width\": 620, \"height\": 330}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"ProjectData.Project Name\"}], \"Y\": [{\"queryRef\": \"ProjectData.Total Tasks\"}], \"Series\": [{\"queryRef\": \"ProjectData.Status\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Project Name\"}, \"Name\": \"ProjectData.Project Name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Tasks\"}, \"Name\": \"ProjectData.Total Tasks\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Status\"}, \"Name\": \"ProjectData.Status\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Tasks by Project & Status'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"13px\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 660,
+          "y": 75,
+          "z": 2,
+          "width": 600,
+          "height": 330,
+          "config": "{\"name\": \"06ad2e5b-689e-4a9a-8b09-9681ce0740ee\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 660, \"y\": 75, \"z\": 2, \"width\": 600, \"height\": 330}}], \"singleVisual\": {\"visualType\": \"treemap\", \"projections\": {\"Group\": [{\"queryRef\": \"ProjectData.Project Name\"}], \"Values\": [{\"queryRef\": \"ProjectData.Total Effort (Days)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Project Name\"}, \"Name\": \"ProjectData.Project Name\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Effort (Days)\"}, \"Name\": \"ProjectData.Total Effort (Days)\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Effort Distribution (Days by Project)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"13px\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 20,
+          "y": 420,
+          "z": 3,
+          "width": 400,
+          "height": 300,
+          "config": "{\"name\": \"30d98e05-f8fd-4705-873e-675eaf15f9a2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 420, \"z\": 3, \"width\": 400, \"height\": 300}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"ProjectData.On Track\"}], \"Y\": [{\"queryRef\": \"ProjectData.Total Tasks\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"On Track\"}, \"Name\": \"ProjectData.On Track\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Tasks\"}, \"Name\": \"ProjectData.Total Tasks\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Schedule Health Overview'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"13px\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        },
+        {
+          "x": 440,
+          "y": 420,
+          "z": 4,
+          "width": 820,
+          "height": 300,
+          "config": "{\"name\": \"85673c94-4dfc-42e3-9280-b3872ab85925\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 440, \"y\": 420, \"z\": 4, \"width\": 820, \"height\": 300}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"projections\": {\"Rows\": [{\"queryRef\": \"ProjectData.Assigned To\"}], \"Values\": [{\"queryRef\": \"ProjectData.Total Tasks\"}, {\"queryRef\": \"ProjectData.Average Progress\"}, {\"queryRef\": \"ProjectData.Total Effort (Days)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"p\", \"Entity\": \"ProjectData\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Assigned To\"}, \"Name\": \"ProjectData.Assigned To\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Tasks\"}, \"Name\": \"ProjectData.Total Tasks\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Average Progress\"}, \"Name\": \"ProjectData.Average Progress\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"p\"}}, \"Property\": \"Total Effort (Days)\"}, \"Name\": \"ProjectData.Total Effort (Days)\"}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Team Workload & Performance Matrix'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#FFFFFF'\"}}}}}, \"fontSize\": \"13px\"}}], \"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#2C3E50'\"}}}}}}}], \"border\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#34495E'\"}}}}}, \"show\": true}}]}}}"
+        }
+      ],
+      "config": "{\"name\": \"ProjectDeepDive\", \"objects\": {\"background\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1B2838'\"}}}}}, \"transparency\": 0}}], \"outspace\": [{\"properties\": {\"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#0D1B2A'\"}}}}}}}]}}"
+    }
+  ],
+  "config": "{\"version\": \"5.53\", \"themeCollection\": {\"baseTheme\": {\"name\": \"CY24SU06\", \"reportVersionAtImport\": \"5.53\", \"type\": 2}}, \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"linguisticSchemaSyncVersion\": 2, \"settings\": {\"useStylableVisualContainerHeader\": true, \"exportDataMode\": 1, \"useNewFilterPaneExperience\": true, \"allowChangeFilterTypes\": true, \"useEnhancedTooltips\": true, \"isPersistentUserStateDisabled\": true}}"
+}
